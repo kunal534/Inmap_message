@@ -1,0 +1,13 @@
+import 'express';
+import './types/express';
+import { Express } from 'express';
+import { ImapService } from './services/ImapService';
+import { ElasticsearchService } from './services/ElasticsearchService';
+import { AICategorizationService } from './services/AICategorizationService';
+import { NotificationService } from './services/NotificationService';
+declare const app: Express;
+declare let imapService: ImapService;
+declare let esService: ElasticsearchService;
+declare let aiService: AICategorizationService;
+declare let notificationService: NotificationService;
+export { app, imapService, esService, aiService, notificationService };
