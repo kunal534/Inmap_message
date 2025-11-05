@@ -1,0 +1,47 @@
+{
+  "name": "reachinbox-onebox",
+  "version": "1.0.0",
+  "description": "AI-powered email onebox with real-time sync",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "email",
+    "ai",
+    "mistral"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.11.0",
+    "@mistralai/mistralai": "^0.3.0",
+    "@slack/webhook": "^6.1.0",
+    "axios": "^1.6.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "imap": "^0.8.19",
+    "jsonwebtoken": "^9.0.2",
+    "mailparser": "^3.6.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/imap": "^0.8.40",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^20.10.6",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

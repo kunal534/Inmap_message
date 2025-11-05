@@ -1,0 +1,211 @@
+# ═════════════════════════════════════════════════════════════
+# 🔒 CREDENTIAL & ENVIRONMENT FILES (NEVER COMMIT!)
+# ═════════════════════════════════════════════════════════════
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+.env.example.local
+
+# Config files with credentials
+src/config/imap.config.ts
+src/config/credentials.ts
+config/secrets.json
+
+# ═════════════════════════════════════════════════════════════
+# 📦 DEPENDENCIES & BUILD OUTPUT
+# ═════════════════════════════════════════════════════════════
+
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Package manager
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ═════════════════════════════════════════════════════════════
+# 💾 DATA & DATABASES (PERSONAL & PRIVATE)
+# ═════════════════════════════════════════════════════════════
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+reachinbox.db
+data/
+!data/.gitkeep
+
+# Elasticsearch backups
+elasticsearch-backup/
+
+# Logs
+*.log
+logs/
+
+# ═════════════════════════════════════════════════════════════
+# 🖥️  IDE & EDITOR
+# ═════════════════════════════════════════════════════════════
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.sublime-project
+
+# ═════════════════════════════════════════════════════════════
+# 🐳 DOCKER & CONTAINERIZATION
+# ═════════════════════════════════════════════════════════════
+
+.docker/
+docker-compose.override.yml
+Dockerfile.local
+
+# ═════════════════════════════════════════════════════════════
+# 🚀 DEPLOYMENT & INFRASTRUCTURE
+# ═════════════════════════════════════════════════════════════
+
+.env.production
+.env.staging
+railway.toml
+.railway/
+.vercel/
+.netlify/
+dist/
+build/
+
+# ═════════════════════════════════════════════════════════════
+# 🧪 TESTING & COVERAGE
+# ═════════════════════════════════════════════════════════════
+
+coverage/
+.nyc_output/
+*.lcov
+.mocha*
+
+# ═════════════════════════════════════════════════════════════
+# 📝 TEMPORARY & CACHE FILES
+# ═════════════════════════════════════════════════════════════
+
+*.tmp
+*.temp
+*.cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# ═════════════════════════════════════════════════════════════
+# 🤖 OS & SYSTEM FILES
+# ═════════════════════════════════════════════════════════════
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+*.cab
+*.msi
+*.msix
+*.msapp
+*.lnk
+
+# ═════════════════════════════════════════════════════════════
+# 🔧 DEVELOPMENT & LOCAL TESTING
+# ═════════════════════════════════════════════════════════════
+
+.env.development.local
+.env.test.local
+*.test.log
+test-results/
+junit.xml
+xunit.xml
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.*.json
+
+# ═════════════════════════════════════════════════════════════
+# 🎨 FRONTEND SPECIFIC (reachinbox-dashboard)
+# ═════════════════════════════════════════════════════════════
+
+build/
+dist/
+.next/
+out/
+.nuxt/
+.cache/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+
+# Create React App
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ═════════════════════════════════════════════════════════════
+# 📊 ANALYTICS & MONITORING
+# ═════════════════════════════════════════════════════════════
+
+sentry.properties
+.sentry-release.json
+newrelic.ini
+
+# ═════════════════════════════════════════════════════════════
+# 🔐 PRIVATE FILES (CRITICAL!)
+# ═════════════════════════════════════════════════════════════
+
+# Personal credentials
+*.pem
+*.key
+*.pub
+*.crt
+*.cer
+private-key.txt
+secret*.txt
+credentials.json
+
+# ═════════════════════════════════════════════════════════════
+# 📦 MONOREPO SPECIFIC
+# ═════════════════════════════════════════════════════════════
+
+packages/*/dist
+packages/*/node_modules
+packages/*/.env
+
+# ═════════════════════════════════════════════════════════════
+# ✅ WHAT SHOULD BE COMMITTED
+# ═════════════════════════════════════════════════════════════
+# ✅ .env.example (without real values)
+# ✅ README.md
+# ✅ package.json
+# ✅ tsconfig.json
+# ✅ src/ (all source code)
+# ✅ public/
+# ✅ docker-compose.yml (if no credentials)
+# ✅ Dockerfile
+# ═════════════════════════════════════════════════════════════
